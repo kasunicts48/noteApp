@@ -6,7 +6,7 @@ import LeftSideBar from "./Body/LeftSideBar";
 import Content from "./Body/Content";
 
 export default function Body() {
-  const [notes, setnotes] = useState(JSON.parse(localStorage.notes) || []);
+  const [notes, setnotes] = useState( [] || JSON.parse(localStorage.notes))
   const [activeNote, setActiveNote] = useState(false);
 
   useEffect(() => {
